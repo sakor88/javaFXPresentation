@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<VBox fx:id="rootPane" prefHeight="1200.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.UIController" alignment="CENTER">
+    <padding>
+        <Insets top="100" right="0" bottom="100" left="0" />
+    </padding>
+    <children>
+        <Region VBox.vgrow="ALWAYS" />
+
+        <Label text="Welcome to JavaFX UI Demo" />
+
+        <Region VBox.vgrow="ALWAYS" />
+
+        <Button text="Click Me!" onAction="#handleButtonClick" />
+
+        <Region VBox.vgrow="ALWAYS" />
+
+        <Label fx:id="clickLabel" />
+
+        <Region VBox.vgrow="ALWAYS" />
+
+        <TextField promptText="Enter your name" fx:id="nameTextField" maxWidth="400.0"/>
+
+        <Region VBox.vgrow="ALWAYS" />
+
+        <CheckBox text="Enable Feature" fx:id="featureCheckBox" />
+
+        <Region VBox.vgrow="ALWAYS" />
+
+        <RadioButton text="Option 1"  />
+
+        <RadioButton text="Option 2"  />
+
+        <RadioButton text="Option 3"  />
+
+        <Region VBox.vgrow="ALWAYS" />
+
+        <ChoiceBox>
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Option A" />
+                    <String fx:value="Option B" />
+                    <String fx:value="Option C" />
+                </FXCollections>
+            </items>
+        </ChoiceBox>
+
+        <Region VBox.vgrow="ALWAYS" />
+
+        <Button text="Back" onAction="#handleBackClick" />
+
+    </children>
+</VBox>

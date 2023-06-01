@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.Circle?>
+<VBox fx:id="rootPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.gimController" alignment="CENTER">
+    <padding>
+        <Insets top="50" right="0" bottom="50" left="0" />
+    </padding>
+    <children>
+        <Region VBox.vgrow="ALWAYS" />
+
+        <Label text="Animated Shapes" />
+
+        <Region VBox.vgrow="ALWAYS" />
+
+        <Pane fx:id="shapesPane" prefWidth="800.0" prefHeight="200.0" />
+
+        <Region VBox.vgrow="ALWAYS" />
+
+        <Label text="Shapes" />
+
+        <Region VBox.vgrow="ALWAYS" />
+
+        <StackPane>
+            <Circle radius="50" fill="#FF0000">
+                <StackPane.margin>
+                    <Insets left="50" right="50" />
+                </StackPane.margin>
+            </Circle>
+            <Rectangle width="100" height="100" fill="#00FF00">
+                <StackPane.margin>
+                    <Insets right="50" />
+                </StackPane.margin>
+            </Rectangle>
+        </StackPane>
+
+        <Region VBox.vgrow="ALWAYS" />
+
+        <Label text="Charts/Diagrams" />
+
+        <Region VBox.vgrow="ALWAYS" />
+
+        <BarChart fx:id="barChart" prefWidth="600" prefHeight="400">
+            <xAxis>
+                <CategoryAxis />
+            </xAxis>
+            <yAxis>
+                <NumberAxis />
+            </yAxis>
+        </BarChart>
+
+        <Region VBox.vgrow="ALWAYS" />
+
+        <Button text="Back" onAction="#handleBackClick" />
+    </children>
+</VBox>

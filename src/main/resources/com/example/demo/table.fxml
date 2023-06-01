@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.tableController" alignment="CENTER">
+    <TableView fx:id="carTable" maxWidth="500.0" prefHeight="400.0">
+        <columns>
+            <TableColumn text="Brand" fx:id="brandColumn" />
+            <TableColumn text="Model" fx:id="modelColumn" />
+            <TableColumn text="Year" fx:id="yearColumn" />
+            <TableColumn text="Color" fx:id="colorColumn" />
+        </columns>
+    </TableView>
+
+    <Button text="Back" onAction="#handleBackClick" />
+</VBox>
