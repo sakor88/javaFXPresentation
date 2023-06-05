@@ -46,7 +46,6 @@ public class tableController implements Initializable {
     // Method to retrieve car data
     private ObservableList<Car> getCarData() {
         ObservableList<Car> carData = FXCollections.observableArrayList();
-        // Replace this section with your actual data retrieval logic
         carData.add(new Car("Toyota", "Camry", "2021", "Silver"));
         carData.add(new Car("Honda", "Civic", "2020", "Black"));
         carData.add(new Car("Ford", "Mustang", "2019", "Red"));
